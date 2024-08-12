@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 04 de javacript</title>
+    <style>
+        body{
+            font: normal 20pt arial ;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        document.write(`Olá <strong> ${nome}</strong>!, seu nome tem ${nome.length} letras.<br/>`)  // mostra quantos caracteres a string tem
+
+
+        document.write(`Seu nome em letras maiúsculas é <strong>${nome.toUpperCase()}</strong> <br/>`) // coloca a string em maiúsculas
+
+        
+        document.write(`Seu nome em minusculas é <strong>${nome.toLowerCase()}</strong>` ) // coloca a string em minúsculas
+    </script>
+</body>
+</html>
