@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercircio aula 11</title>
+</head>
+<body>
+    <h1>Qual a sua nacionalidade?</h1>
+
+    Onde voçê nasceu? <input type="text" name="pais" id="pais">
+
+    <input type="button" value="verifique" onclick="verifique()">
+
+    <div id="result">
+       
+    </div>
+
+    <script>
+        function verifique(){
+
+        var pas = window.document.getElementById('pais')
+        var result = window.document.getElementById('div#result')
+        var nac  = (pas.value)
+        if (nac == brasil){
+            resul.innerHTML += `Voce é brasileiro`
+        }
+        else{
+            resul.innerText += 'Voce é estrangeiro'
+        }
+        }
+
+    </script>
+
+    
+</body>
+</html>
