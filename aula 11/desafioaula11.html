@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercircio aula 11</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1>Qual a sua nacionalidade?</h1>
 
-    Onde voçê nasceu? <input type="text" name="pais" id="pais">
-
-    <input type="button" value="verifique" onclick="verifique()">
+    Onde você nasceu? <input type="text" name="pais" id="pais">
+    <input type="button" value="verifique" id="bnt" onclick="clicar()" >
 
     <div id="result">
        
     </div>
 
     <script>
-        function verifique(){
+        
 
-        var pas = window.document.getElementById('pais')
-        var result = window.document.getElementById('div#result')
-        var nac  = (pas.value)
-        if (nac == brasil){
-            resul.innerHTML += `Voce é brasileiro`
-        }
-        else{
-            resul.innerText += 'Voce é estrangeiro'
-        }
-        }
+        function clicar(){
 
+            var PaisNasc = document.getElementById('pais').value
+            var botao = document.getElementById('bnt')
+            
+            var CaixaDeTexto = document.getElementById('result')
+
+
+            if (PaisNasc == 'Brasil'){
+                CaixaDeTexto.innerHTML += "<p>Voce é Brasileiro </P> "
+            } else {
+                CaixaDeTexto.innerHTML += "<p>Voce não nasceu no brasil, portando voce é estrangeiro </p> "
+            }
+        }
     </script>
 
     

@@ -20,25 +20,30 @@
     </style>
 </head>
 <body>
-    <div id="area" >
+    <div id="area"  > <!--Poderia colocar os eventos diretamente aqui dentro tambem-->
         Clique aqui!
     </div>
 
     <script>
-        var a = window.document.getElementById('area')
+        var a = window.document.getElementById('area') // selecionando a div através do id 'area'
+
+        // Adicionando eventos 
         a.addEventListener('click', clicar)
-        a.addEventListener('mouseenter',entrar )
+        a.addEventListener('mouseenter',entrar ) 
         a.addEventListener('mouseout', sair)
 
+        // Chamando a função de click para quando a div for clicada mudar a cor de fundo para vermelho
         function clicar() {
             a.innerText = ' Voçe clicou!'
             a.style.background = 'red'
         }
 
+        // Quando a função for chamada vai mudar o texto
         function entrar() {
             a.innerText = 'Voçe entrou!'
         }
 
+        // Quando o ponteiro do mouse sair de dentro da div vai mostrar outro texto
         function sair() {
             a.innerText = 'Voçe saiu!'
         }
